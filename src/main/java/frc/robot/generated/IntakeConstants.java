@@ -18,8 +18,8 @@ public class IntakeConstants {
     public static final double rotationGearRatio = 45.7143;
     public static final Slot0Configs rotationSlot0Configs = new Slot0Configs()
         .withGravityType(GravityTypeValue.Arm_Cosine)
-        .withKG(rotationGearRatio)
-        .withKS(0.0)
+        .withKG(0.18)
+        .withKS(0.15)
         .withKV(4.854368932038835)
         .withKA(0.4705882352941176)
         .withKP(0.0)
@@ -45,4 +45,6 @@ public class IntakeConstants {
         .withForwardSoftLimitThreshold(0)
         .withReverseSoftLimitEnable(false)
         .withReverseSoftLimitThreshold(0.0);
+
+        public static final double homePosition = 0.449;
 }
