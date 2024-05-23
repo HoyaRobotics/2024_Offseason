@@ -22,7 +22,7 @@ public class IntakeConstants {
         .withKS(0.15)
         .withKV(4.854368932038835)
         .withKA(0.4705882352941176)
-        .withKP(0.0)
+        .withKP(200.0)
         .withKI(0.0)
         .withKD(0.0);
     public static final CurrentLimitsConfigs rotationCurrentLimits = new CurrentLimitsConfigs()
@@ -35,8 +35,8 @@ public class IntakeConstants {
         .withFeedbackSensorSource(FeedbackSensorSourceValue.RotorSensor)
         .withSensorToMechanismRatio(rotationGearRatio);
     public static final MotionMagicConfigs rotationMotionMagicConfigs = new MotionMagicConfigs()
-        .withMotionMagicAcceleration(0.0)
-        .withMotionMagicCruiseVelocity(0.0)
+        .withMotionMagicAcceleration(1.0)
+        .withMotionMagicCruiseVelocity(1.0)
         .withMotionMagicExpo_kA(0.0)
         .withMotionMagicExpo_kV(0)
         .withMotionMagicJerk(0.0);

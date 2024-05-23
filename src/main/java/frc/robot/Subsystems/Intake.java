@@ -42,6 +42,6 @@ public class Intake extends SubsystemBase {
     talonfxConfigs.SoftwareLimitSwitch = IntakeConstants.rotationSoftwareLimitSwitchConfigs;
     talonfxConfigs.MotorOutput.NeutralMode = NeutralModeValue.Coast;
     rotationMotor.getConfigurator().apply(talonfxConfigs);
-    rotationMotor.setPosition(0.0);
+    rotationMotor.setPosition(IntakeConstants.homePosition);
   }
 }
